@@ -1,0 +1,46 @@
+main {
+	height: calc(100vh - 88px);
+}
+
+#tabContent{
+	max-height: calc(100vh - 130px);
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+
+tbody tr{
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 767px){
+	#tabContent{
+		height: calc(100vh - 114px);
+		overflow-y: scroll;
+	}
+	.table{
+		border-spacing: 0px;
+	}
+	.table th, .table td {
+		padding: 0.75rem 0rem !important;
+	}
+
+} 
+
+
+
+.modal-body{
+	max-height: calc(100vh - 120px);
+	overflow-y: auto;
+}
+tr .id{
+	display: none;
+}
+
+#delete-modal-type{
+	text-transform: capitalize;
+}
+
+#filter{
+	display: none;
+}
